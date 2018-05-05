@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B91B8BA05FE6DF94D562A2E3 /* Pods_Rideshare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87058133DE7F2FFE61CD080A /* Pods_Rideshare.framework */; };
+		E5698D8E209D560500EEAE4C /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5698D8D209D560500EEAE4C /* GradientView.swift */; };
 		E5E59A1620994BB000E64604 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E59A1520994BB000E64604 /* AppDelegate.swift */; };
 		E5E59A1820994BB000E64604 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E59A1720994BB000E64604 /* ViewController.swift */; };
 		E5E59A1B20994BB000E64604 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5E59A1920994BB000E64604 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 		72432A54FBB1737EF449AB30 /* Pods-Rideshare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rideshare.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rideshare/Pods-Rideshare.release.xcconfig"; sourceTree = "<group>"; };
 		87058133DE7F2FFE61CD080A /* Pods_Rideshare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rideshare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA7D97DCA10FD017127158D8 /* Pods-Rideshare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rideshare.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Rideshare/Pods-Rideshare.debug.xcconfig"; sourceTree = "<group>"; };
+		E5698D8D209D560500EEAE4C /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		E5E59A1220994BB000E64604 /* Rideshare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rideshare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5E59A1520994BB000E64604 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5E59A1720994BB000E64604 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +59,28 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E5698D8A209D559700EEAE4C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E5698D8B209D55B000EEAE4C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E5698D8C209D55C200EEAE4C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E5698D8D209D560500EEAE4C /* GradientView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		E5E59A0920994BB000E64604 = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +102,9 @@
 		E5E59A1420994BB000E64604 /* Rideshare */ = {
 			isa = PBXGroup;
 			children = (
+				E5698D8B209D55B000EEAE4C /* Model */,
+				E5698D8C209D55C200EEAE4C /* View */,
+				E5698D8A209D559700EEAE4C /* Controller */,
 				E5E59A1520994BB000E64604 /* AppDelegate.swift */,
 				E5E59A1720994BB000E64604 /* ViewController.swift */,
 				E5E59A1920994BB000E64604 /* Main.storyboard */,
@@ -206,6 +233,7 @@
 			files = (
 				E5E59A1820994BB000E64604 /* ViewController.swift in Sources */,
 				E5E59A1620994BB000E64604 /* AppDelegate.swift in Sources */,
+				E5698D8E209D560500EEAE4C /* GradientView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,7 +381,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GBH98HJS99;
 				INFOPLIST_FILE = Rideshare/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mackenziekinzel.Rideshare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -369,7 +400,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GBH98HJS99;
 				INFOPLIST_FILE = Rideshare/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mackenziekinzel.Rideshare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
