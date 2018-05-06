@@ -57,7 +57,7 @@
                                             </stackView>
                                         </subviews>
                                     </stackView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Tad-wl-bmK">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sample-photo" translatesAutoresizingMaskIntoConstraints="NO" id="Tad-wl-bmK" customClass="RoundImageView" customModule="Rideshare" customModuleProvider="target">
                                         <rect key="frame" x="313" y="0.0" width="30" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="30" id="bMe-IC-gGV"/>
@@ -149,7 +149,7 @@
                             <constraint firstItem="Rvn-DV-Vpp" firstAttribute="centerX" secondItem="ND0-6b-pel" secondAttribute="centerX" id="6hw-fS-1Ru"/>
                             <constraint firstItem="tb8-oL-hls" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="7iC-Hk-cTG"/>
                             <constraint firstItem="YHz-hc-kXM" firstAttribute="centerX" secondItem="Rvn-DV-Vpp" secondAttribute="centerX" id="9No-3M-kTQ"/>
-                            <constraint firstItem="ND0-6b-pel" firstAttribute="top" secondItem="MZP-yv-dkh" secondAttribute="bottom" symbolic="YES" id="AaO-DM-9XW"/>
+                            <constraint firstItem="ND0-6b-pel" firstAttribute="top" secondItem="MZP-yv-dkh" secondAttribute="bottom" constant="8" symbolic="YES" id="AaO-DM-9XW"/>
                             <constraint firstItem="tb8-oL-hls" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Cbp-Za-Evy"/>
                             <constraint firstItem="ND0-6b-pel" firstAttribute="leading" secondItem="MZP-yv-dkh" secondAttribute="leading" id="GDq-Py-Xyg"/>
                             <constraint firstItem="YHz-hc-kXM" firstAttribute="centerX" secondItem="tb8-oL-hls" secondAttribute="centerX" id="JwM-9Z-F5U"/>
@@ -179,5 +179,6 @@
     <resources>
         <image name="centerMapBtn" width="62" height="62"/>
         <image name="menuSliderBtn" width="30" height="24"/>
+        <image name="sample-photo" width="320" height="320"/>
     </resources>
 </document>
