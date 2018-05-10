@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B91B8BA05FE6DF94D562A2E3 /* Pods_Rideshare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87058133DE7F2FFE61CD080A /* Pods_Rideshare.framework */; };
 		E5698D8E209D560500EEAE4C /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5698D8D209D560500EEAE4C /* GradientView.swift */; };
+		E5BA4F9520A3EA6F00A578DF /* RoundedShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BA4F9420A3EA6F00A578DF /* RoundedShadowButton.swift */; };
 		E5D6FB42209FF7AD004B5DC7 /* RoundedShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6FB41209FF7AD004B5DC7 /* RoundedShadowView.swift */; };
 		E5D6FB44209FF9B8004B5DC7 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6FB43209FF9B8004B5DC7 /* CircleView.swift */; };
 		E5E59A1620994BB000E64604 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E59A1520994BB000E64604 /* AppDelegate.swift */; };
@@ -24,6 +25,7 @@
 		87058133DE7F2FFE61CD080A /* Pods_Rideshare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rideshare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA7D97DCA10FD017127158D8 /* Pods-Rideshare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rideshare.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Rideshare/Pods-Rideshare.debug.xcconfig"; sourceTree = "<group>"; };
 		E5698D8D209D560500EEAE4C /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		E5BA4F9420A3EA6F00A578DF /* RoundedShadowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowButton.swift; sourceTree = "<group>"; };
 		E5D6FB41209FF7AD004B5DC7 /* RoundedShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowView.swift; sourceTree = "<group>"; };
 		E5D6FB43209FF9B8004B5DC7 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		E5E59A1220994BB000E64604 /* Rideshare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rideshare.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,6 +88,7 @@
 				E5F2CCC0209EA333008D6A11 /* RoundImageView.swift */,
 				E5D6FB41209FF7AD004B5DC7 /* RoundedShadowView.swift */,
 				E5D6FB43209FF9B8004B5DC7 /* CircleView.swift */,
+				E5BA4F9420A3EA6F00A578DF /* RoundedShadowButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5BA4F9520A3EA6F00A578DF /* RoundedShadowButton.swift in Sources */,
 				E5D6FB44209FF9B8004B5DC7 /* CircleView.swift in Sources */,
 				E5E59A1820994BB000E64604 /* ViewController.swift in Sources */,
 				E5F2CCC1209EA333008D6A11 /* RoundImageView.swift in Sources */,

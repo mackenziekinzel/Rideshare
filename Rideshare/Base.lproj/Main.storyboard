@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -68,18 +67,33 @@
                                     <constraint firstAttribute="height" constant="30" id="ON4-NV-xsF"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YHz-hc-kXM">
-                                <rect key="frame" x="16" y="587" width="343" height="60"/>
-                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2ha-Yi-zk5">
+                                <rect key="frame" x="0.0" y="587" width="375" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YHz-hc-kXM" customClass="RoundedShadowButton" customModule="Rideshare" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="-8" width="335" height="60"/>
+                                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="fP1-6Z-9Un"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="yOM-9D-llK"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="28"/>
+                                        <state key="normal" title="REQUEST RIDE">
+                                            <color key="titleColor" red="0.22352941179999999" green="0.22352941179999999" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="actionButtonWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WnI-fP-Vxt"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="fP1-6Z-9Un"/>
+                                    <constraint firstAttribute="trailing" secondItem="YHz-hc-kXM" secondAttribute="trailing" constant="20" id="0Pf-99-Wmh"/>
+                                    <constraint firstItem="YHz-hc-kXM" firstAttribute="leading" secondItem="2ha-Yi-zk5" secondAttribute="leading" constant="20" id="Oax-6c-8Ab"/>
+                                    <constraint firstItem="YHz-hc-kXM" firstAttribute="top" secondItem="2ha-Yi-zk5" secondAttribute="top" constant="-8" id="pej-Cl-gym"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="28"/>
-                                <state key="normal" title="REQUEST RIDE">
-                                    <color key="titleColor" red="0.22352941179999999" green="0.22352941179999999" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gCn-PU-uQ7">
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gCn-PU-uQ7">
                                 <rect key="frame" x="299" y="519" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="UmW-ZM-ELn"/>
@@ -160,30 +174,27 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="YHz-hc-kXM" firstAttribute="top" secondItem="gCn-PU-uQ7" secondAttribute="bottom" constant="8" symbolic="YES" id="0W5-4u-Iw1"/>
+                            <constraint firstItem="2ha-Yi-zk5" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="2HO-Eg-TkS"/>
                             <constraint firstItem="tb8-oL-hls" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4ip-1A-mIb"/>
                             <constraint firstItem="Rvn-DV-Vpp" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="4yP-93-2Mt"/>
-                            <constraint firstItem="YHz-hc-kXM" firstAttribute="centerX" secondItem="Rvn-DV-Vpp" secondAttribute="centerX" id="9No-3M-kTQ"/>
                             <constraint firstItem="ND0-6b-pel" firstAttribute="top" secondItem="MZP-yv-dkh" secondAttribute="bottom" constant="20" id="AaO-DM-9XW"/>
                             <constraint firstItem="ND0-6b-pel" firstAttribute="leading" secondItem="MZP-yv-dkh" secondAttribute="leading" id="GDq-Py-Xyg"/>
+                            <constraint firstItem="2ha-Yi-zk5" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="GTa-ef-sLp"/>
                             <constraint firstItem="MZP-yv-dkh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="PlS-vC-C78"/>
                             <constraint firstItem="Rvn-DV-Vpp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="V1s-61-bML"/>
                             <constraint firstItem="ND0-6b-pel" firstAttribute="trailing" secondItem="MZP-yv-dkh" secondAttribute="trailing" id="feQ-Gq-bXn"/>
-                            <constraint firstItem="YHz-hc-kXM" firstAttribute="centerX" secondItem="MZP-yv-dkh" secondAttribute="centerX" id="jpR-83-m2N"/>
                             <constraint firstItem="tb8-oL-hls" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="kgD-fk-5PI"/>
-                            <constraint firstItem="MZP-yv-dkh" firstAttribute="width" secondItem="YHz-hc-kXM" secondAttribute="width" id="lZN-At-Fov"/>
-                            <constraint firstItem="YHz-hc-kXM" firstAttribute="trailing" secondItem="gCn-PU-uQ7" secondAttribute="trailing" id="nwe-Zu-SBM"/>
-                            <constraint firstAttribute="bottom" secondItem="YHz-hc-kXM" secondAttribute="bottom" constant="20" symbolic="YES" id="ovM-3X-x9R"/>
+                            <constraint firstItem="2ha-Yi-zk5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qEx-GZ-iME"/>
                             <constraint firstItem="tb8-oL-hls" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="rHI-0i-UOq"/>
                             <constraint firstItem="ND0-6b-pel" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tT7-J2-0sZ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Rvn-DV-Vpp" secondAttribute="trailing" id="tsp-G1-3lp"/>
                             <constraint firstItem="Rvn-DV-Vpp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uz4-AX-tF2"/>
-                            <constraint firstItem="YHz-hc-kXM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="w1V-rH-U8w"/>
                             <constraint firstItem="tb8-oL-hls" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ysZ-wj-jwg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="actionButton" destination="YHz-hc-kXM" id="O9Z-0Q-ytF"/>
                         <outlet property="mapView" destination="tb8-oL-hls" id="yiH-T3-qch"/>
                     </connections>
                 </viewController>
