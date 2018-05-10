@@ -178,8 +178,8 @@
                             <constraint firstItem="ND0-6b-pel" firstAttribute="leading" secondItem="MZP-yv-dkh" secondAttribute="leading" id="GDq-Py-Xyg"/>
                             <constraint firstItem="2ha-Yi-zk5" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="GTa-ef-sLp"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MZP-yv-dkh" secondAttribute="trailing" constant="20" id="Kfe-Lp-Csr"/>
+                            <constraint firstItem="Rvn-DV-Vpp" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="NZt-rb-Kbp"/>
                             <constraint firstItem="MZP-yv-dkh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="PlS-vC-C78"/>
-                            <constraint firstItem="Rvn-DV-Vpp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="V1s-61-bML"/>
                             <constraint firstItem="2ha-Yi-zk5" firstAttribute="top" secondItem="gCn-PU-uQ7" secondAttribute="bottom" constant="8" id="eM0-P0-d9K"/>
                             <constraint firstItem="ND0-6b-pel" firstAttribute="trailing" secondItem="MZP-yv-dkh" secondAttribute="trailing" id="feQ-Gq-bXn"/>
                             <constraint firstItem="MZP-yv-dkh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="g0h-zD-n8y"/>
@@ -188,7 +188,6 @@
                             <constraint firstItem="2ha-Yi-zk5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qEx-GZ-iME"/>
                             <constraint firstItem="tb8-oL-hls" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="rHI-0i-UOq"/>
                             <constraint firstItem="ND0-6b-pel" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tT7-J2-0sZ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Rvn-DV-Vpp" secondAttribute="trailing" id="tsp-G1-3lp"/>
                             <constraint firstItem="Rvn-DV-Vpp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uz4-AX-tF2"/>
                             <constraint firstItem="gCn-PU-uQ7" firstAttribute="trailing" secondItem="ND0-6b-pel" secondAttribute="trailing" id="ySs-9o-vvB"/>
                             <constraint firstItem="tb8-oL-hls" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ysZ-wj-jwg"/>

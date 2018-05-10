@@ -20,8 +20,9 @@ class GradientView: UIView {
         gradient.frame = self.bounds
         gradient.colors = [UIColor.white.cgColor, UIColor.init(white: 1.0, alpha: 0.0).cgColor]
         gradient.startPoint = CGPoint.zero
-        gradient.endPoint = CGPoint(x: 0, y: 1)
+        gradient.endPoint = CGPoint(x: 0, y: 1.0)
         gradient.locations = [0.8, 1.0]
+        gradient.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: self.frame.height)
         self.layer.addSublayer(gradient)
     }
 }
