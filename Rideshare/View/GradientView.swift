@@ -13,10 +13,10 @@ class GradientView: UIView {
     let gradient = CAGradientLayer()
     
     override func awakeFromNib() {
-        setUpGradientView()
+        setupView()
     }
     
-    func setUpGradientView() {
+    func setupView() {
         gradient.frame = self.bounds
         gradient.colors = [UIColor.white.cgColor, UIColor.init(white: 1.0, alpha: 0.0).cgColor]
         gradient.startPoint = CGPoint.zero
