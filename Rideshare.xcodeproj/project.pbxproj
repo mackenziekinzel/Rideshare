@@ -11,6 +11,7 @@
 		E5698D8E209D560500EEAE4C /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5698D8D209D560500EEAE4C /* GradientView.swift */; };
 		E5BA4F9520A3EA6F00A578DF /* RoundedShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BA4F9420A3EA6F00A578DF /* RoundedShadowButton.swift */; };
 		E5BA4F9720A5430500A578DF /* LeftSidePanelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BA4F9620A5430500A578DF /* LeftSidePanelVC.swift */; };
+		E5BA4F9920A543CC00A578DF /* ContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BA4F9820A543CC00A578DF /* ContainerVC.swift */; };
 		E5D6FB42209FF7AD004B5DC7 /* RoundedShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6FB41209FF7AD004B5DC7 /* RoundedShadowView.swift */; };
 		E5D6FB44209FF9B8004B5DC7 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6FB43209FF9B8004B5DC7 /* CircleView.swift */; };
 		E5E59A1620994BB000E64604 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E59A1520994BB000E64604 /* AppDelegate.swift */; };
@@ -28,6 +29,7 @@
 		E5698D8D209D560500EEAE4C /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		E5BA4F9420A3EA6F00A578DF /* RoundedShadowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowButton.swift; sourceTree = "<group>"; };
 		E5BA4F9620A5430500A578DF /* LeftSidePanelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftSidePanelVC.swift; sourceTree = "<group>"; };
+		E5BA4F9820A543CC00A578DF /* ContainerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerVC.swift; sourceTree = "<group>"; };
 		E5D6FB41209FF7AD004B5DC7 /* RoundedShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowView.swift; sourceTree = "<group>"; };
 		E5D6FB43209FF9B8004B5DC7 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		E5E59A1220994BB000E64604 /* Rideshare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rideshare.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,6 +76,7 @@
 			children = (
 				E5E59A1720994BB000E64604 /* HomeVC.swift */,
 				E5BA4F9620A5430500A578DF /* LeftSidePanelVC.swift */,
+				E5BA4F9820A543CC00A578DF /* ContainerVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 				E5BA4F9520A3EA6F00A578DF /* RoundedShadowButton.swift in Sources */,
 				E5BA4F9720A5430500A578DF /* LeftSidePanelVC.swift in Sources */,
 				E5D6FB44209FF9B8004B5DC7 /* CircleView.swift in Sources */,
+				E5BA4F9920A543CC00A578DF /* ContainerVC.swift in Sources */,
 				E5E59A1820994BB000E64604 /* HomeVC.swift in Sources */,
 				E5F2CCC1209EA333008D6A11 /* RoundImageView.swift in Sources */,
 				E5D6FB42209FF7AD004B5DC7 /* RoundedShadowView.swift in Sources */,
