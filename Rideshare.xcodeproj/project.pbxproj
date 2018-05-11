@@ -10,10 +10,11 @@
 		B91B8BA05FE6DF94D562A2E3 /* Pods_Rideshare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87058133DE7F2FFE61CD080A /* Pods_Rideshare.framework */; };
 		E5698D8E209D560500EEAE4C /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5698D8D209D560500EEAE4C /* GradientView.swift */; };
 		E5BA4F9520A3EA6F00A578DF /* RoundedShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BA4F9420A3EA6F00A578DF /* RoundedShadowButton.swift */; };
+		E5BA4F9720A5430500A578DF /* LeftSidePanelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BA4F9620A5430500A578DF /* LeftSidePanelVC.swift */; };
 		E5D6FB42209FF7AD004B5DC7 /* RoundedShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6FB41209FF7AD004B5DC7 /* RoundedShadowView.swift */; };
 		E5D6FB44209FF9B8004B5DC7 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6FB43209FF9B8004B5DC7 /* CircleView.swift */; };
 		E5E59A1620994BB000E64604 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E59A1520994BB000E64604 /* AppDelegate.swift */; };
-		E5E59A1820994BB000E64604 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E59A1720994BB000E64604 /* ViewController.swift */; };
+		E5E59A1820994BB000E64604 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E59A1720994BB000E64604 /* HomeVC.swift */; };
 		E5E59A1B20994BB000E64604 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5E59A1920994BB000E64604 /* Main.storyboard */; };
 		E5E59A1D20994BB100E64604 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5E59A1C20994BB100E64604 /* Assets.xcassets */; };
 		E5E59A2020994BB100E64604 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5E59A1E20994BB100E64604 /* LaunchScreen.storyboard */; };
@@ -26,11 +27,12 @@
 		AA7D97DCA10FD017127158D8 /* Pods-Rideshare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rideshare.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Rideshare/Pods-Rideshare.debug.xcconfig"; sourceTree = "<group>"; };
 		E5698D8D209D560500EEAE4C /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		E5BA4F9420A3EA6F00A578DF /* RoundedShadowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowButton.swift; sourceTree = "<group>"; };
+		E5BA4F9620A5430500A578DF /* LeftSidePanelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftSidePanelVC.swift; sourceTree = "<group>"; };
 		E5D6FB41209FF7AD004B5DC7 /* RoundedShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowView.swift; sourceTree = "<group>"; };
 		E5D6FB43209FF9B8004B5DC7 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		E5E59A1220994BB000E64604 /* Rideshare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rideshare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5E59A1520994BB000E64604 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E5E59A1720994BB000E64604 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E5E59A1720994BB000E64604 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		E5E59A1A20994BB000E64604 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E5E59A1C20994BB100E64604 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5E59A1F20994BB100E64604 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -70,6 +72,8 @@
 		E5698D8A209D559700EEAE4C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E5E59A1720994BB000E64604 /* HomeVC.swift */,
+				E5BA4F9620A5430500A578DF /* LeftSidePanelVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -118,7 +122,6 @@
 				E5698D8C209D55C200EEAE4C /* View */,
 				E5698D8A209D559700EEAE4C /* Controller */,
 				E5E59A1520994BB000E64604 /* AppDelegate.swift */,
-				E5E59A1720994BB000E64604 /* ViewController.swift */,
 				E5E59A1920994BB000E64604 /* Main.storyboard */,
 				E5E59A1C20994BB100E64604 /* Assets.xcassets */,
 				E5E59A1E20994BB100E64604 /* LaunchScreen.storyboard */,
@@ -244,8 +247,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5BA4F9520A3EA6F00A578DF /* RoundedShadowButton.swift in Sources */,
+				E5BA4F9720A5430500A578DF /* LeftSidePanelVC.swift in Sources */,
 				E5D6FB44209FF9B8004B5DC7 /* CircleView.swift in Sources */,
-				E5E59A1820994BB000E64604 /* ViewController.swift in Sources */,
+				E5E59A1820994BB000E64604 /* HomeVC.swift in Sources */,
 				E5F2CCC1209EA333008D6A11 /* RoundImageView.swift in Sources */,
 				E5D6FB42209FF7AD004B5DC7 /* RoundedShadowView.swift in Sources */,
 				E5E59A1620994BB000E64604 /* AppDelegate.swift in Sources */,
