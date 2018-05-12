@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B91B8BA05FE6DF94D562A2E3 /* Pods_Rideshare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87058133DE7F2FFE61CD080A /* Pods_Rideshare.framework */; };
+		E501B9C720A67C87006E6AFC /* CenterVCDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E501B9C620A67C87006E6AFC /* CenterVCDelegate.swift */; };
 		E5698D8E209D560500EEAE4C /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5698D8D209D560500EEAE4C /* GradientView.swift */; };
 		E5BA4F9520A3EA6F00A578DF /* RoundedShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BA4F9420A3EA6F00A578DF /* RoundedShadowButton.swift */; };
 		E5BA4F9720A5430500A578DF /* LeftSidePanelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BA4F9620A5430500A578DF /* LeftSidePanelVC.swift */; };
@@ -26,6 +27,7 @@
 		72432A54FBB1737EF449AB30 /* Pods-Rideshare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rideshare.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rideshare/Pods-Rideshare.release.xcconfig"; sourceTree = "<group>"; };
 		87058133DE7F2FFE61CD080A /* Pods_Rideshare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rideshare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA7D97DCA10FD017127158D8 /* Pods-Rideshare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rideshare.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Rideshare/Pods-Rideshare.debug.xcconfig"; sourceTree = "<group>"; };
+		E501B9C620A67C87006E6AFC /* CenterVCDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterVCDelegate.swift; sourceTree = "<group>"; };
 		E5698D8D209D560500EEAE4C /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		E5BA4F9420A3EA6F00A578DF /* RoundedShadowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowButton.swift; sourceTree = "<group>"; };
 		E5BA4F9620A5430500A578DF /* LeftSidePanelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftSidePanelVC.swift; sourceTree = "<group>"; };
@@ -69,6 +71,14 @@
 				87058133DE7F2FFE61CD080A /* Pods_Rideshare.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E501B9C520A67C50006E6AFC /* Protocalls */ = {
+			isa = PBXGroup;
+			children = (
+				E501B9C620A67C87006E6AFC /* CenterVCDelegate.swift */,
+			);
+			path = Protocalls;
 			sourceTree = "<group>";
 		};
 		E5698D8A209D559700EEAE4C /* Controller */ = {
@@ -121,6 +131,7 @@
 		E5E59A1420994BB000E64604 /* Rideshare */ = {
 			isa = PBXGroup;
 			children = (
+				E501B9C520A67C50006E6AFC /* Protocalls */,
 				E5698D8B209D55B000EEAE4C /* Model */,
 				E5698D8C209D55C200EEAE4C /* View */,
 				E5698D8A209D559700EEAE4C /* Controller */,
@@ -249,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E501B9C720A67C87006E6AFC /* CenterVCDelegate.swift in Sources */,
 				E5BA4F9520A3EA6F00A578DF /* RoundedShadowButton.swift in Sources */,
 				E5BA4F9720A5430500A578DF /* LeftSidePanelVC.swift in Sources */,
 				E5D6FB44209FF9B8004B5DC7 /* CircleView.swift in Sources */,
