@@ -29,12 +29,14 @@ class ContainerVC: UIViewController {
     
     var isHidden = false
     let centerPanelExpandedOffset: CGFloat = 160
-
+    
+    var tap: UITapGestureRecognizer!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         initCenter(screen: showVC)
     }
-
+    
     func initCenter(screen: ShowWhichVC) {
         var presentingController: UIViewController
         
@@ -90,17 +92,17 @@ extension ContainerVC: CenterVCDelegate {
         sidePanelController.didMove(toParentViewController: self)
     }
     
-    func animateLeftPanel(shouldExpand: Bool) {
+    @objc func animateLeftPanel(shouldExpand: Bool) {
         if shouldExpand {
             isHidden = !isHidden
-//            animateStatusBar()
- //           setupWhiteCoverView()
+            //            animateStatusBar()
+            setupWhiteCoverView()
             currentState = .leftPanelExpanded
             animateCenterPanelXPosition(targetPosition: centerController.view.frame.width - centerPanelExpandedOffset)
         } else {
             isHidden = !isHidden
- //           animateStatusBar()
-//            hideWhiteCoverView()
+            //           animateStatusBar()
+            hideWhiteCoverView()
             animateCenterPanelXPosition(targetPosition: 0, completion: {
                 (finished) in
                 if finished == true {
@@ -121,7 +123,36 @@ extension ContainerVC: CenterVCDelegate {
     func animateStatusBar() {
         UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: .curveEaseInOut, animations: {
             self.setNeedsStatusBarAppearanceUpdate()
-            })
+        })
+    }
+    
+    func setupWhiteCoverView() {
+        let whiteCoverView = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height))
+        whiteCoverView.alpha = 0.0
+        whiteCoverView.backgroundColor = UIColor.white
+        whiteCoverView.tag = 25
+        self.centerController.view.addSubview(whiteCoverView)
+        
+        UIView.animate(withDuration: 0.2, animations: {
+            whiteCoverView.alpha = 0.75
+        })
+        
+        tap = UITapGestureRecognizer(target: self, action: #selector(animateLeftPanel(shouldExpand:)))
+        tap.numberOfTapsRequired = 1
+        self.centerController.view.addGestureRecognizer(tap)
+    }
+    
+    func hideWhiteCoverView() {
+        centerController.view.removeGestureRecognizer(tap)
+        for subview in self.centerController.view.subviews {
+            if subview.tag == 25 {
+                UIView.animate(withDuration: 0.2, animations: {
+                    subview.alpha = 0.0
+                }, completion: { (finished) in
+                    subview.removeFromSuperview()
+                })
+            }
+        }
     }
 }
 
