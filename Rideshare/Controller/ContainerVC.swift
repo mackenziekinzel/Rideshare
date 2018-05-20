@@ -95,13 +95,13 @@ extension ContainerVC: CenterVCDelegate {
     @objc func animateLeftPanel(shouldExpand: Bool) {
         if shouldExpand {
             isHidden = !isHidden
-            //            animateStatusBar()
+            animateStatusBar()
             setupWhiteCoverView()
             currentState = .leftPanelExpanded
             animateCenterPanelXPosition(targetPosition: centerController.view.frame.width - centerPanelExpandedOffset)
         } else {
             isHidden = !isHidden
-            //           animateStatusBar()
+            animateStatusBar()
             hideWhiteCoverView()
             animateCenterPanelXPosition(targetPosition: 0, completion: {
                 (finished) in
@@ -132,10 +132,7 @@ extension ContainerVC: CenterVCDelegate {
         whiteCoverView.backgroundColor = UIColor.white
         whiteCoverView.tag = 25
         self.centerController.view.addSubview(whiteCoverView)
-        
-        UIView.animate(withDuration: 0.2, animations: {
-            whiteCoverView.alpha = 0.75
-        })
+        whiteCoverView.fadeTo(alphaValue: 0.75, withDuration: 0.2)
         
         tap = UITapGestureRecognizer(target: self, action: #selector(animateLeftPanel(shouldExpand:)))
         tap.numberOfTapsRequired = 1
