@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B91B8BA05FE6DF94D562A2E3 /* Pods_Rideshare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87058133DE7F2FFE61CD080A /* Pods_Rideshare.framework */; };
 		E501B9C720A67C87006E6AFC /* CenterVCDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E501B9C620A67C87006E6AFC /* CenterVCDelegate.swift */; };
+		E50CF06320B518D2009B26DD /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50CF06220B518D2009B26DD /* LoginVC.swift */; };
 		E5306D1920B11CA700AF66EF /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5306D1820B11CA700AF66EF /* UIViewExt.swift */; };
 		E5698D8E209D560500EEAE4C /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5698D8D209D560500EEAE4C /* GradientView.swift */; };
 		E5BA4F9520A3EA6F00A578DF /* RoundedShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BA4F9420A3EA6F00A578DF /* RoundedShadowButton.swift */; };
@@ -29,6 +30,7 @@
 		87058133DE7F2FFE61CD080A /* Pods_Rideshare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rideshare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA7D97DCA10FD017127158D8 /* Pods-Rideshare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rideshare.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Rideshare/Pods-Rideshare.debug.xcconfig"; sourceTree = "<group>"; };
 		E501B9C620A67C87006E6AFC /* CenterVCDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterVCDelegate.swift; sourceTree = "<group>"; };
+		E50CF06220B518D2009B26DD /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		E5306D1820B11CA700AF66EF /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
 		E5698D8D209D560500EEAE4C /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		E5BA4F9420A3EA6F00A578DF /* RoundedShadowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowButton.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				E5E59A1720994BB000E64604 /* HomeVC.swift */,
 				E5BA4F9620A5430500A578DF /* LeftSidePanelVC.swift */,
 				E5BA4F9820A543CC00A578DF /* ContainerVC.swift */,
+				E50CF06220B518D2009B26DD /* LoginVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 			files = (
 				E501B9C720A67C87006E6AFC /* CenterVCDelegate.swift in Sources */,
 				E5BA4F9520A3EA6F00A578DF /* RoundedShadowButton.swift in Sources */,
+				E50CF06320B518D2009B26DD /* LoginVC.swift in Sources */,
 				E5BA4F9720A5430500A578DF /* LeftSidePanelVC.swift in Sources */,
 				E5D6FB44209FF9B8004B5DC7 /* CircleView.swift in Sources */,
 				E5BA4F9920A543CC00A578DF /* ContainerVC.swift in Sources */,

@@ -285,6 +285,9 @@
                                 <state key="normal" title="Sign Up/Login">
                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginButtonWasPressed:" destination="Bmx-2s-osW" eventType="touchUpInside" id="2zd-lf-bxI"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -306,10 +309,10 @@
             </objects>
             <point key="canvasLocation" x="861.60000000000002" y="118.29085457271366"/>
         </scene>
-        <!--View Controller-->
+        <!--LoginVC-->
         <scene sceneID="pkc-E5-kIa">
             <objects>
-                <viewController id="m16-kA-nC5" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginVC" id="m16-kA-nC5" customClass="LoginVC" customModule="Rideshare" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pNd-kP-NXI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
