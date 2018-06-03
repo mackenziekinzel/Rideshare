@@ -12,13 +12,6 @@ class LeftSidePanelVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     @IBAction func loginButtonWasPressed(_ sender: Any) {
@@ -26,5 +19,4 @@ class LeftSidePanelVC: UIViewController {
         let loginVC = storyboard.instantiateViewController(withIdentifier: "LoginVC") as? LoginVC
         present(loginVC!, animated: true, completion: nil)
     }
-    
 }

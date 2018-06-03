@@ -110,7 +110,6 @@ extension ContainerVC: CenterVCDelegate {
                     self.leftVC = nil
                 }
             })
-            
         }
     }
     
@@ -152,7 +151,6 @@ extension ContainerVC: CenterVCDelegate {
         }
     }
 }
-
 
 
 private extension UIStoryboard {

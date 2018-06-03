@@ -26,7 +26,7 @@ class HomeVC: UIViewController, MKMapViewDelegate {
         actionButton.animateButton(shouldLoad: true, withMessage: nil)
     }
     
-    @IBAction func menuButtonWasPressed(_ sender: Any) {
+    @IBAction func menuButtonWasPressed(_ sender: UIButton) {
         delegate?.toggleLeftPanel()
     }
 }
