@@ -14,4 +14,8 @@ class LoginVC: UIViewController {
         super.viewDidLoad()
     }
 
+    @IBAction func cancelButtonWasPressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
 }
