@@ -12,6 +12,7 @@ class LoginVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.bindToKeyboard()
     }
 
     @IBAction func cancelButtonWasPressed(_ sender: Any) {
