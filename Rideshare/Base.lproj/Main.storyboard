@@ -327,7 +327,7 @@
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="eTM-bD-d6v">
-                                            <rect key="frame" x="25.5" y="156.5" width="325" height="354"/>
+                                            <rect key="frame" x="25.5" y="141.5" width="325" height="354"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Ov-6u-IHq">
                                                     <rect key="frame" x="47.5" y="0.0" width="230" height="50"/>
@@ -411,7 +411,7 @@
                                         </button>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="eTM-bD-d6v" firstAttribute="centerY" secondItem="7Bf-Gn-TQC" secondAttribute="centerY" id="WaQ-sZ-VPu"/>
+                                        <constraint firstItem="eTM-bD-d6v" firstAttribute="centerY" secondItem="7Bf-Gn-TQC" secondAttribute="centerY" constant="-15" id="WaQ-sZ-VPu"/>
                                         <constraint firstItem="d9G-R4-1YH" firstAttribute="leading" secondItem="7Bf-Gn-TQC" secondAttribute="leading" constant="20" id="We4-kf-zC5"/>
                                         <constraint firstAttribute="bottom" secondItem="d9G-R4-1YH" secondAttribute="bottom" constant="20" id="gVa-MV-UTY"/>
                                         <constraint firstItem="eTM-bD-d6v" firstAttribute="centerX" secondItem="7Bf-Gn-TQC" secondAttribute="centerX" id="hak-gf-24z"/>
