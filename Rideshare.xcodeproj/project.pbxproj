@@ -154,8 +154,8 @@
 				E5698D8A209D559700EEAE4C /* Controller */,
 				E5E59A1520994BB000E64604 /* AppDelegate.swift */,
 				E5E59A1920994BB000E64604 /* Main.storyboard */,
-				E5E59A1C20994BB100E64604 /* Assets.xcassets */,
 				E5E59A1E20994BB100E64604 /* LaunchScreen.storyboard */,
+				E5E59A1C20994BB100E64604 /* Assets.xcassets */,
 				E5E59A2120994BB100E64604 /* Info.plist */,
 			);
 			path = Rideshare;
