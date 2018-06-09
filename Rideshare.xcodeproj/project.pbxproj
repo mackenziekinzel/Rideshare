@@ -12,6 +12,7 @@
 		E50CF06320B518D2009B26DD /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50CF06220B518D2009B26DD /* LoginVC.swift */; };
 		E50CF06520B6573B009B26DD /* RoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50CF06420B6573B009B26DD /* RoundedTextField.swift */; };
 		E5306D1920B11CA700AF66EF /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5306D1820B11CA700AF66EF /* UIViewExt.swift */; };
+		E538750820CB80D4009688A5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E538750720CB80D3009688A5 /* GoogleService-Info.plist */; };
 		E5698D8E209D560500EEAE4C /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5698D8D209D560500EEAE4C /* GradientView.swift */; };
 		E5BA4F9520A3EA6F00A578DF /* RoundedShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BA4F9420A3EA6F00A578DF /* RoundedShadowButton.swift */; };
 		E5BA4F9720A5430500A578DF /* LeftSidePanelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BA4F9620A5430500A578DF /* LeftSidePanelVC.swift */; };
@@ -34,6 +35,7 @@
 		E50CF06220B518D2009B26DD /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		E50CF06420B6573B009B26DD /* RoundedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTextField.swift; sourceTree = "<group>"; };
 		E5306D1820B11CA700AF66EF /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
+		E538750720CB80D3009688A5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E5698D8D209D560500EEAE4C /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		E5BA4F9420A3EA6F00A578DF /* RoundedShadowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowButton.swift; sourceTree = "<group>"; };
 		E5BA4F9620A5430500A578DF /* LeftSidePanelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftSidePanelVC.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 				E5E59A1E20994BB100E64604 /* LaunchScreen.storyboard */,
 				E5E59A1C20994BB100E64604 /* Assets.xcassets */,
 				E5E59A2120994BB100E64604 /* Info.plist */,
+				E538750720CB80D3009688A5 /* GoogleService-Info.plist */,
 			);
 			path = Rideshare;
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5E59A2020994BB100E64604 /* LaunchScreen.storyboard in Resources */,
+				E538750820CB80D4009688A5 /* GoogleService-Info.plist in Resources */,
 				E5E59A1D20994BB100E64604 /* Assets.xcassets in Resources */,
 				E5E59A1B20994BB000E64604 /* Main.storyboard in Resources */,
 			);
