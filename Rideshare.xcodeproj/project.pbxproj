@@ -141,7 +141,6 @@
 		E5E59A0920994BB000E64604 = {
 			isa = PBXGroup;
 			children = (
-				E538750920CCCC0B009688A5 /* Services */,
 				E5E59A1420994BB000E64604 /* Rideshare */,
 				E5E59A1320994BB000E64604 /* Products */,
 				0655584CDF0F5C58C9C065A8 /* Pods */,
@@ -160,6 +159,7 @@
 		E5E59A1420994BB000E64604 /* Rideshare */ = {
 			isa = PBXGroup;
 			children = (
+				E538750920CCCC0B009688A5 /* Services */,
 				E5306D1720B11C7200AF66EF /* Extensions */,
 				E501B9C520A67C50006E6AFC /* Protocalls */,
 				E5698D8B209D55B000EEAE4C /* Model */,
