@@ -55,6 +55,35 @@ class LoginVC: UIViewController, UITextFieldDelegate {
                         }
                         print("Email user authenticated successfully with Firebase")
                         self.dismiss(animated: true, completion: nil)
+                    } else {
+                        Auth.auth().createUser(withEmail: email, password: password, completion: { (user, error) in
+                            if error != nil {
+                                if let errorCode = AuthErrorCode(rawValue: error!._code) {
+                                    switch errorCode {
+                                    case .invalidEmail:
+                                        print("Email invalid. Please try again.")
+                                    case .emailAlreadyInUse:
+                                        print("That email is already in use. Please try again.")
+                                    case .wrongPassword:
+                                        print("Incorrect password. Please try again.")
+                                    default:
+                                        print("An unexpected error occurred. Please try again.")
+                                    }
+                                }
+                            } else {
+                                if let user = user {
+                                    if self.segmentedControl.selectedSegmentIndex == 0 {
+                                        let userData = ["provider": user.providerID] as [String: Any]
+                                        DataService.instance.createFirebaseDBUser(uid: user.uid, userData: userData, isDriver: false)
+                                    } else {
+                                        let userData = ["provider": user.providerID, "userIsDriver": true, "isPickupModeEnabled": false, "driverIsOnTrip": false] as [String: Any]
+                                        DataService.instance.createFirebaseDBUser(uid: user.uid, userData: userData, isDriver: true)
+                                    }
+                                }
+                                print("Successfully created a new user with Firebase")
+                                self.dismiss(animated: true, completion: nil)
+                            }
+                        })
                     }
                 }
             }
