@@ -354,6 +354,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="yF1-ez-UKe"/>
                     </view>
+                    <connections>
+                        <outlet property="accountTypeLabel" destination="JPj-yo-jds" id="VPe-IZ-UTM"/>
+                        <outlet property="loginButton" destination="jpM-ee-jsO" id="Fno-aW-OX6"/>
+                        <outlet property="pickupModeLabel" destination="l3H-k3-CpJ" id="3mK-j9-BVb"/>
+                        <outlet property="pickupModeSwitch" destination="mnr-e4-uKu" id="1kB-Zf-DfT"/>
+                        <outlet property="userEmailLabel" destination="GKe-Wd-EQJ" id="cWV-FX-TNn"/>
+                        <outlet property="userImageView" destination="lQ3-Zq-V9r" id="zGz-CF-ZSE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SVx-au-4CE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
