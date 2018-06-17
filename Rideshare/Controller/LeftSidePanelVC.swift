@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 
 class LeftSidePanelVC: UIViewController {
-
+    
     @IBOutlet weak var pickupModeSwitch: UISwitch!
     @IBOutlet weak var pickupModeLabel: UILabel!
     @IBOutlet weak var userImageView: RoundImageView!
@@ -30,6 +30,18 @@ class LeftSidePanelVC: UIViewController {
         pickupModeLabel.isHidden = true
         
         observePassengersAndDrivers()
+        
+        if Auth.auth().currentUser == nil {
+            userEmailLabel.text = ""
+            accountTypeLabel.text = ""
+            userImageView.isHidden = true
+            loginButton.setTitle("Sign Up / Login", for: .normal)
+        } else {
+            userEmailLabel.text = Auth.auth().currentUser?.email
+            accountTypeLabel.text = ""
+            userImageView.isHidden = false
+            loginButton.setTitle("Logout", for: .normal)
+        }
     }
     
     func observePassengersAndDrivers() {
