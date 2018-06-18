@@ -71,8 +71,22 @@ class LeftSidePanelVC: UIViewController {
     }
     
     @IBAction func loginButtonWasPressed(_ sender: Any) {
+        if Auth.auth().currentUser == nil {
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         let loginVC = storyboard.instantiateViewController(withIdentifier: "LoginVC") as? LoginVC
         present(loginVC!, animated: true, completion: nil)
+        } else {
+            do {
+                try Auth.auth().signOut()
+                userEmailLabel.text = ""
+                accountTypeLabel.text = ""
+                userImageView.isHidden = true
+                pickupModeLabel.text = ""
+                pickupModeSwitch.isHidden = true
+                loginButton.setTitle("Sign Up / Login", for: .normal)
+            } catch (let error) {
+                print(error)
+            }
+        }
     }
 }
