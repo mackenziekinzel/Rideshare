@@ -10,6 +10,7 @@ import UIKit
 import MapKit
 import CoreLocation
 import RevealingSplashView
+import Firebase
 
 class HomeVC: UIViewController {
     
@@ -37,6 +38,8 @@ class HomeVC: UIViewController {
         
         centerMapOnUserLocation()
         
+        loadDriverAnnotationsFromFB()
+        
         self.view.addSubview(revealingSplashView)
         revealingSplashView.animationType = SplashAnimationType.swingAndZoomOut
         revealingSplashView.startAnimation()
@@ -48,6 +51,26 @@ class HomeVC: UIViewController {
         } else {
             manager?.requestAlwaysAuthorization()
         }
+    }
+    
+    func loadDriverAnnotationsFromFB() {
+        DataService.instance.REF_DRIVERS.observeSingleEvent(of: .value, with: { (snapshot) in
+            if let driverSnapshot = snapshot.children.allObjects as? [DataSnapshot] {
+                for driver in driverSnapshot {
+                    if driver.hasChild("coordinate") {
+                        if driver.childSnapshot(forPath: "isPickupModeEnabled").value as? Bool == true {
+                            if let driverDict = driver.value as? Dictionary<String, AnyObject> {
+                                let coordinateArray = driverDict["coordinate"] as! NSArray
+                                let driverCoordinate = CLLocationCoordinate2D(latitude: coordinateArray[0] as! CLLocationDegrees, longitude: coordinateArray[1] as! CLLocationDegrees)
+                                
+                                let annotation = DriverAnnotation(coordinate: driverCoordinate, withKey: driver.key)
+                                self.mapView.addAnnotation(annotation)
+                            }
+                        }
+                    }
+                }
+            }
+        })
     }
     
     func centerMapOnUserLocation() {
