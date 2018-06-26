@@ -38,6 +38,10 @@ class HomeVC: UIViewController {
         
         centerMapOnUserLocation()
         
+        DataService.instance.REF_DRIVERS.observe(.value) { (snapshot) in
+            self.loadDriverAnnotationsFromFB()
+        }
+        
         loadDriverAnnotationsFromFB()
         
         self.view.addSubview(revealingSplashView)
@@ -64,7 +68,18 @@ class HomeVC: UIViewController {
                                 let driverCoordinate = CLLocationCoordinate2D(latitude: coordinateArray[0] as! CLLocationDegrees, longitude: coordinateArray[1] as! CLLocationDegrees)
                                 
                                 let annotation = DriverAnnotation(coordinate: driverCoordinate, withKey: driver.key)
-                                self.mapView.addAnnotation(annotation)
+                                
+                                var driverIsVisible: Bool {
+                                    return self.mapView.annotations.contains(where: { (annotation) -> Bool in
+                                        if let driverAnnotation = annotation as? DriverAnnotation {
+                                            if driverAnnotation.key == driver.key {
+                                                driverAnnotation.update(annotationPosition: driverAnnotation, withCoordiante: driverCoordinate)
+                                                return true
+                                            }
+                                        }
+                                        return false
+                                    })
+                                }
                             }
                         }
                     }
