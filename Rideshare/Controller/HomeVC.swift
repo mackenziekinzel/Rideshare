@@ -19,6 +19,7 @@ class HomeVC: UIViewController {
     @IBOutlet weak var centerMapButton: UIButton!
     var delegate: CenterVCDelegate?
     
+    var tableView: UITableView
     
     var manager: CLLocationManager?
     
@@ -150,5 +151,49 @@ extension HomeVC: MKMapViewDelegate {
     
     func mapView(_ mapView: MKMapView, regionWillChangeAnimated animated: Bool) {
         centerMapButton.fadeTo(alphaValue: 1.0, withDuration: 0.2)
+    }
+}
+
+extension HomeVC: UITextFieldDelegate {
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        tableView.frame = CGRect(x: 20, y: view.frame.height, width: view.frame.width - 40, height: view.frame.height - 170)
+        tableView.layer.cornerRadius = 5.0
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "locationCell")
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.tag = 18
+        tableView.rowHeight = 60
+        
+        view.addSubview(tableView)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        <#code#>
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        <#code#>
+    }
+    
+    func textFieldShouldClear(_ textField: UITextField) -> Bool {
+        <#code#>
+    }
+}
+
+extension HomeVC: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return UITableViewCell()
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("selected")
     }
 }
