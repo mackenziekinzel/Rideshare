@@ -204,6 +204,7 @@
                     <connections>
                         <outlet property="actionButton" destination="YHz-hc-kXM" id="O9Z-0Q-ytF"/>
                         <outlet property="centerMapButton" destination="gCn-PU-uQ7" id="ckm-eJ-fph"/>
+                        <outlet property="destinationTextField" destination="of4-1M-SxB" id="Lgc-kK-5he"/>
                         <outlet property="mapView" destination="tb8-oL-hls" id="yiH-T3-qch"/>
                     </connections>
                 </viewController>
