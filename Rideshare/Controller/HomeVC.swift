@@ -168,10 +168,15 @@ extension HomeVC: UITextFieldDelegate {
             
             view.addSubview(tableView)
             animateTableView(shouldShow: true)
+            
+            
         }
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == destinationTextField {
+            view.endEditing(true)
+        }
         return true
     }
     

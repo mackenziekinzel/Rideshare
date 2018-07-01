@@ -45,5 +45,7 @@
 	<string>Rideshare needs your location so our drivers can find you.</string>
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>Rideshare needs your location so our drivers can find you.</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Rideshare needs your location so our drivers can find you.</string>
 </dict>
 </plist>
