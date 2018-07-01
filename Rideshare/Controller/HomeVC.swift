@@ -18,6 +18,7 @@ class HomeVC: UIViewController {
     @IBOutlet weak var actionButton: RoundedShadowButton!
     @IBOutlet weak var centerMapButton: UIButton!
     @IBOutlet weak var destinationTextField: UITextField!
+    @IBOutlet weak var destinationCircle: CircleView!
     
     var delegate: CenterVCDelegate?
     var manager: CLLocationManager?
@@ -169,7 +170,10 @@ extension HomeVC: UITextFieldDelegate {
             view.addSubview(tableView)
             animateTableView(shouldShow: true)
             
-            
+            UIView.animate(withDuration: 0.2) {
+                self.destinationCircle.backgroundColor = UIColor.red
+                self.destinationCircle.borderColor = UIColor.init(red: 199/255, green: 0/255, blue: 0/255, alpha: 1.0)
+            }
         }
     }
     
@@ -181,10 +185,18 @@ extension HomeVC: UITextFieldDelegate {
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
-        
+        if textField == destinationTextField {
+            if destinationTextField.text == "" {
+                UIView.animate(withDuration: 0.2) {
+                    self.destinationCircle.backgroundColor = UIColor.lightGray
+                    self.destinationCircle.borderColor = UIColor.darkGray
+                }
+            }
+        }
     }
     
     func textFieldShouldClear(_ textField: UITextField) -> Bool {
+        centerMapOnUserLocation()
         return true
     }
     
