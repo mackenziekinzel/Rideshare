@@ -25,7 +25,7 @@ class HomeVC: UIViewController {
     var regionRadius: CLLocationDistance = 1000
     var tableView = UITableView()
     var matchingItems: [MKMapItem] = [MKMapItem]()
-    var currentUserId = Auth.auth().currentUser?.uid
+//    var currentUserId = Auth.auth().currentUser?.uid
     var selectedItemPlacemark: MKPlacemark? = nil
     var route: MKRoute!
     
@@ -320,13 +320,13 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let passengerCoordinate = manager?.location?.coordinate
-        let passengerAnnotation = PassengerAnnotation(coordinate: passengerCoordinate!, key: currentUserId!)
+        let passengerAnnotation = PassengerAnnotation(coordinate: passengerCoordinate!, key: (Auth.auth().currentUser?.uid)!)
         mapView.addAnnotation(passengerAnnotation)
         
         destinationTextField.text = tableView.cellForRow(at: indexPath)?.textLabel?.text
         
         let selectedMapItem = matchingItems[indexPath.row]
-        DataService.instance.REF_USERS.child(currentUserId!).updateChildValues(["tripCoordinate": [selectedMapItem.placemark.coordinate.latitude, selectedMapItem.placemark.coordinate.longitude]])
+        DataService.instance.REF_USERS.child((Auth.auth().currentUser?.uid)!).updateChildValues(["tripCoordinate": [selectedMapItem.placemark.coordinate.latitude, selectedMapItem.placemark.coordinate.longitude]])
         
         dropPinFor(placemark: selectedMapItem.placemark)
         
