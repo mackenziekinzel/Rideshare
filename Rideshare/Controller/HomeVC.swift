@@ -27,6 +27,7 @@ class HomeVC: UIViewController {
     var matchingItems: [MKMapItem] = [MKMapItem]()
     var currentUserId = Auth.auth().currentUser?.uid
     var selectedItemPlacemark: MKPlacemark? = nil
+    var route: MKRoute!
     
     let revealingSplashView = RevealingSplashView(iconImage: UIImage(named: "launchScreenIcon")!, iconInitialSize: CGSize(width: 80, height: 80), backgroundColor: UIColor.white)
 
@@ -206,6 +207,23 @@ extension HomeVC: MKMapViewDelegate {
         let annotation = MKPointAnnotation()
         annotation.coordinate = placemark.coordinate
         mapView.addAnnotation(annotation)
+    }
+    
+    func searchMapKitForResultsWithPolyline(forMapItem mapItem: MKMapItem) {
+        let request = MKDirectionsRequest()
+        request.source = MKMapItem.forCurrentLocation()
+        request.destination = mapItem
+        request.transportType = MKDirectionsTransportType.automobile
+        
+        let directions = MKDirections(request: request)
+        directions.calculate { (response, error) in
+            guard let response = response else {
+                print(error.debugDescription)
+                return
+            }
+           self.route = response.routes[0]
+           self.mapView.add(self.route.polyline)
+        }
     }
 }
 
