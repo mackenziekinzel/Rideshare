@@ -29,6 +29,7 @@
 		E5E59A1D20994BB100E64604 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5E59A1C20994BB100E64604 /* Assets.xcassets */; };
 		E5E59A2020994BB100E64604 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5E59A1E20994BB100E64604 /* LaunchScreen.storyboard */; };
 		E5F2CCC1209EA333008D6A11 /* RoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F2CCC0209EA333008D6A11 /* RoundImageView.swift */; };
+		E5F41FA320F1B3C50075165F /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F41FA220F1B3C50075165F /* UIViewControllerExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		E5E59A1F20994BB100E64604 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E5E59A2120994BB100E64604 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5F2CCC0209EA333008D6A11 /* RoundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundImageView.swift; sourceTree = "<group>"; };
+		E5F41FA220F1B3C50075165F /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				E5306D1820B11CA700AF66EF /* UIViewExt.swift */,
+				E5F41FA220F1B3C50075165F /* UIViewControllerExt.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 			files = (
 				E501B9C720A67C87006E6AFC /* CenterVCDelegate.swift in Sources */,
 				E538750B20CCCCBE009688A5 /* DataService.swift in Sources */,
+				E5F41FA320F1B3C50075165F /* UIViewControllerExt.swift in Sources */,
 				E5BA4F9520A3EA6F00A578DF /* RoundedShadowButton.swift in Sources */,
 				E50CF06320B518D2009B26DD /* LoginVC.swift in Sources */,
 				E50CF06520B6573B009B26DD /* RoundedTextField.swift in Sources */,
