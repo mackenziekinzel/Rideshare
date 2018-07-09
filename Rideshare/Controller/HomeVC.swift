@@ -25,12 +25,12 @@ class HomeVC: UIViewController {
     var regionRadius: CLLocationDistance = 1000
     var tableView = UITableView()
     var matchingItems: [MKMapItem] = [MKMapItem]()
-//    var currentUserId = Auth.auth().currentUser?.uid
+    //    var currentUserId = Auth.auth().currentUser?.uid
     var selectedItemPlacemark: MKPlacemark? = nil
     var route: MKRoute!
     
     let revealingSplashView = RevealingSplashView(iconImage: UIImage(named: "launchScreenIcon")!, iconInitialSize: CGSize(width: 80, height: 80), backgroundColor: UIColor.white)
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -112,7 +112,7 @@ class HomeVC: UIViewController {
         let coordinateRegion = MKCoordinateRegionMakeWithDistance(mapView.userLocation.coordinate, regionRadius * 2.0, regionRadius * 2.0)
         mapView.setRegion(coordinateRegion, animated: true)
     }
-
+    
     @IBAction func actionButtonWasPressed(_ sender: Any) {
         actionButton.animateButton(shouldLoad: true, withMessage: nil)
     }
@@ -282,6 +282,16 @@ extension HomeVC: UITextFieldDelegate {
     func textFieldShouldClear(_ textField: UITextField) -> Bool {
         matchingItems = []
         tableView.reloadData()
+        
+        DataService.instance.REF_USERS.child((Auth.auth().currentUser?.uid)!).child("tripCoordinate").removeValue()
+        mapView.removeOverlays(mapView.overlays)
+        for annotation in mapView.annotations {
+            if let annotation = annotation as? MKPointAnnotation {
+                mapView.removeAnnotation(annotation)
+            } else if annotation.isKind(of: PassengerAnnotation.self) {
+                mapView.removeAnnotation(annotation)
+            }
+        }
         centerMapOnUserLocation()
         return true
     }
@@ -332,6 +342,7 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
         destinationTextField.text = tableView.cellForRow(at: indexPath)?.textLabel?.text
         
         let selectedMapItem = matchingItems[indexPath.row]
+        
         DataService.instance.REF_USERS.child((Auth.auth().currentUser?.uid)!).updateChildValues(["tripCoordinate": [selectedMapItem.placemark.coordinate.latitude, selectedMapItem.placemark.coordinate.longitude]])
         
         dropPinFor(placemark: selectedMapItem.placemark)
