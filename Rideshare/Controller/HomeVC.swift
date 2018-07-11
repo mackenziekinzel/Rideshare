@@ -122,8 +122,21 @@ class HomeVC: UIViewController {
     }
     
     @IBAction func centerMapButtonWasPressed(_ sender: UIButton) {
-        centerMapOnUserLocation()
-        centerMapButton.fadeTo(alphaValue: 0.0, withDuration: 0.2)
+        DataService.instance.REF_USERS.observeSingleEvent(of: .value, with: { (snapshot) in
+            if let userSnapshot = snapshot.children.allObjects as? [DataSnapshot] {
+                for user in userSnapshot {
+                    if user.key == (Auth.auth().currentUser?.uid)! {
+                        if user.hasChild("tripCoordinate") {
+                            self.zoom(toFitAnnotationsFromMapView: self.mapView)
+                            self.centerMapButton.fadeTo(alphaValue: 0.0, withDuration: 0.2)
+                        } else {
+                            self.centerMapOnUserLocation()
+                            self.centerMapButton.fadeTo(alphaValue: 0.0, withDuration: 0.2)
+                        }
+                    }
+                }
+            }
+        })
     }
 }
 
