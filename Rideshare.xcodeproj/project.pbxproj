@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B91B8BA05FE6DF94D562A2E3 /* Pods_Rideshare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87058133DE7F2FFE61CD080A /* Pods_Rideshare.framework */; };
+		E501474B20FAF7B700D10E73 /* PickupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E501474A20FAF7B700D10E73 /* PickupVC.swift */; };
 		E501B9C720A67C87006E6AFC /* CenterVCDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E501B9C620A67C87006E6AFC /* CenterVCDelegate.swift */; };
 		E50CF06320B518D2009B26DD /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50CF06220B518D2009B26DD /* LoginVC.swift */; };
 		E50CF06520B6573B009B26DD /* RoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50CF06420B6573B009B26DD /* RoundedTextField.swift */; };
@@ -37,6 +38,7 @@
 		72432A54FBB1737EF449AB30 /* Pods-Rideshare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rideshare.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rideshare/Pods-Rideshare.release.xcconfig"; sourceTree = "<group>"; };
 		87058133DE7F2FFE61CD080A /* Pods_Rideshare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rideshare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA7D97DCA10FD017127158D8 /* Pods-Rideshare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rideshare.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Rideshare/Pods-Rideshare.debug.xcconfig"; sourceTree = "<group>"; };
+		E501474A20FAF7B700D10E73 /* PickupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickupVC.swift; sourceTree = "<group>"; };
 		E501B9C620A67C87006E6AFC /* CenterVCDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterVCDelegate.swift; sourceTree = "<group>"; };
 		E50CF06220B518D2009B26DD /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		E50CF06420B6573B009B26DD /* RoundedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTextField.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				E5BA4F9620A5430500A578DF /* LeftSidePanelVC.swift */,
 				E5BA4F9820A543CC00A578DF /* ContainerVC.swift */,
 				E50CF06220B518D2009B26DD /* LoginVC.swift */,
+				E501474A20FAF7B700D10E73 /* PickupVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 				E51CC0EE20F6ED43001CAC09 /* Alertable.swift in Sources */,
 				E5306D1920B11CA700AF66EF /* UIViewExt.swift in Sources */,
 				E5B87D5820DCA02400A6DFAA /* UpdateService.swift in Sources */,
+				E501474B20FAF7B700D10E73 /* PickupVC.swift in Sources */,
 				E5E59A1820994BB000E64604 /* HomeVC.swift in Sources */,
 				E5F2CCC1209EA333008D6A11 /* RoundImageView.swift in Sources */,
 				E5D6FB42209FF7AD004B5DC7 /* RoundedShadowView.swift in Sources */,

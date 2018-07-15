@@ -531,10 +531,10 @@
             </objects>
             <point key="canvasLocation" x="1592.8" y="118.29085457271366"/>
         </scene>
-        <!--View Controller-->
+        <!--PickupVC-->
         <scene sceneID="tYx-br-uaw">
             <objects>
-                <viewController id="1cH-lO-YwX" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PickupVC" id="1cH-lO-YwX" customClass="PickupVC" customModule="Rideshare" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ytf-VK-F7J">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -557,8 +557,8 @@
                                     <constraint firstAttribute="height" constant="60" id="gYA-7Y-tUC"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="28"/>
-                                <state key="normal" title="SIGN UP / LOGIN">
-                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="ACCEPT TRIP">
+                                    <color key="titleColor" red="0.12941176469999999" green="0.32156862749999998" blue="0.4823529412" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A1S-0u-2C8">
@@ -577,6 +577,19 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Would you like to pick up this passenger?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h77-gg-ogv">
+                                <rect key="frame" x="0.0" y="543.5" width="375" height="23.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="V6d-YS-21D">
+                                <rect key="frame" x="18" y="154" width="339" height="339"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="339" id="d3c-WA-ITC"/>
+                                    <constraint firstAttribute="width" constant="339" id="wvb-wi-5q0"/>
+                                </constraints>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" red="0.12941176470588234" green="0.32156862745098036" blue="0.4823529411764706" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -586,14 +599,19 @@
                             <constraint firstItem="JM5-i9-otj" firstAttribute="leading" secondItem="vWW-bh-yrg" secondAttribute="leading" constant="20" id="JYb-a5-NJy"/>
                             <constraint firstItem="vWW-bh-yrg" firstAttribute="bottom" secondItem="JM5-i9-otj" secondAttribute="bottom" constant="20" id="Jrs-Vt-uDi"/>
                             <constraint firstItem="YRH-Oa-s5z" firstAttribute="leading" secondItem="vWW-bh-yrg" secondAttribute="leading" constant="20" id="K8w-DQ-Tfc"/>
+                            <constraint firstItem="V6d-YS-21D" firstAttribute="centerX" secondItem="vWW-bh-yrg" secondAttribute="centerX" id="LFY-TQ-kCr"/>
+                            <constraint firstItem="h77-gg-ogv" firstAttribute="leading" secondItem="vWW-bh-yrg" secondAttribute="leading" id="SxQ-Pu-5tJ"/>
+                            <constraint firstItem="JM5-i9-otj" firstAttribute="top" secondItem="h77-gg-ogv" secondAttribute="bottom" constant="20" id="UMt-QK-vM3"/>
+                            <constraint firstItem="V6d-YS-21D" firstAttribute="centerY" secondItem="vWW-bh-yrg" secondAttribute="centerY" constant="-20" id="VeK-bv-fGT"/>
                             <constraint firstItem="A1S-0u-2C8" firstAttribute="centerX" secondItem="vWW-bh-yrg" secondAttribute="centerX" id="gjd-Aq-fOf"/>
+                            <constraint firstItem="vWW-bh-yrg" firstAttribute="trailing" secondItem="h77-gg-ogv" secondAttribute="trailing" id="pxy-Rf-s9F"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vWW-bh-yrg"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mG6-pq-PCv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2269" y="122"/>
+            <point key="canvasLocation" x="2356" y="118.29085457271366"/>
         </scene>
     </scenes>
     <resources>
