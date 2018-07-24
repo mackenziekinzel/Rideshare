@@ -17,6 +17,7 @@
 		E538750820CB80D4009688A5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E538750720CB80D3009688A5 /* GoogleService-Info.plist */; };
 		E538750B20CCCCBE009688A5 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E538750A20CCCCBE009688A5 /* DataService.swift */; };
 		E5698D8E209D560500EEAE4C /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5698D8D209D560500EEAE4C /* GradientView.swift */; };
+		E595D1F82106C95500B36992 /* RoundMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E595D1F72106C95400B36992 /* RoundMapView.swift */; };
 		E5B87D5820DCA02400A6DFAA /* UpdateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B87D5720DCA02400A6DFAA /* UpdateService.swift */; };
 		E5B87D5A20DF4B3100A6DFAA /* DriverAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B87D5920DF4B3100A6DFAA /* DriverAnnotation.swift */; };
 		E5B87D5C20EC717F00A6DFAA /* PassengerAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B87D5B20EC717F00A6DFAA /* PassengerAnnotation.swift */; };
@@ -47,6 +48,7 @@
 		E538750720CB80D3009688A5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E538750A20CCCCBE009688A5 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		E5698D8D209D560500EEAE4C /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		E595D1F72106C95400B36992 /* RoundMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundMapView.swift; sourceTree = "<group>"; };
 		E5B87D5720DCA02400A6DFAA /* UpdateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateService.swift; sourceTree = "<group>"; };
 		E5B87D5920DF4B3100A6DFAA /* DriverAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverAnnotation.swift; sourceTree = "<group>"; };
 		E5B87D5B20EC717F00A6DFAA /* PassengerAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassengerAnnotation.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				E50CF06420B6573B009B26DD /* RoundedTextField.swift */,
 				E5B87D5920DF4B3100A6DFAA /* DriverAnnotation.swift */,
 				E5B87D5B20EC717F00A6DFAA /* PassengerAnnotation.swift */,
+				E595D1F72106C95400B36992 /* RoundMapView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 				E5306D1920B11CA700AF66EF /* UIViewExt.swift in Sources */,
 				E5B87D5820DCA02400A6DFAA /* UpdateService.swift in Sources */,
 				E501474B20FAF7B700D10E73 /* PickupVC.swift in Sources */,
+				E595D1F82106C95500B36992 /* RoundMapView.swift in Sources */,
 				E5E59A1820994BB000E64604 /* HomeVC.swift in Sources */,
 				E5F2CCC1209EA333008D6A11 /* RoundImageView.swift in Sources */,
 				E5D6FB42209FF7AD004B5DC7 /* RoundedShadowView.swift in Sources */,

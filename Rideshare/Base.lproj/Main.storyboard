@@ -547,6 +547,7 @@
                                 </constraints>
                                 <state key="normal" image="cancelBtn"/>
                                 <connections>
+                                    <action selector="cancelButtonPressed:" destination="1cH-lO-YwX" eventType="touchUpInside" id="PxK-5C-tVy"/>
                                     <action selector="cancelButtonWasPressed:" destination="m16-kA-nC5" eventType="touchUpInside" id="XKI-rZ-Qhi"/>
                                 </connections>
                             </button>
@@ -560,6 +561,9 @@
                                 <state key="normal" title="ACCEPT TRIP">
                                     <color key="titleColor" red="0.12941176469999999" green="0.32156862749999998" blue="0.4823529412" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="acceptTripButtonPressed:" destination="1cH-lO-YwX" eventType="touchUpInside" id="P2d-OJ-oee"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A1S-0u-2C8">
                                 <rect key="frame" x="84" y="21" width="206.5" height="49.5"/>
@@ -583,7 +587,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="V6d-YS-21D">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="V6d-YS-21D" customClass="RoundMapView" customModule="Rideshare" customModuleProvider="target">
                                 <rect key="frame" x="18" y="154" width="339" height="339"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="339" id="d3c-WA-ITC"/>
@@ -608,6 +612,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vWW-bh-yrg"/>
                     </view>
+                    <connections>
+                        <outlet property="pickupMapView" destination="V6d-YS-21D" id="eVi-G1-chN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mG6-pq-PCv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

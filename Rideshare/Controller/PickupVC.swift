@@ -10,10 +10,17 @@ import UIKit
 
 class PickupVC: UIViewController {
     
+    @IBOutlet weak var pickupMapView: RoundMapView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
+    @IBAction func acceptTripButtonPressed(_ sender: RoundedShadowButton) {
+        
+    }
     
-    
+    @IBAction func cancelButtonPressed(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
 }
