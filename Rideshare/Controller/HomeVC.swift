@@ -54,6 +54,10 @@ class HomeVC: UIViewController, Alertable {
         self.view.addSubview(revealingSplashView)
         revealingSplashView.animationType = SplashAnimationType.swingAndZoomOut
         revealingSplashView.startAnimation()
+        
+        UpdateService.instance.observeTrips { (tripDict) in
+            <#code#>
+        }
     }
     
     func checkLocationAuthStatus() {

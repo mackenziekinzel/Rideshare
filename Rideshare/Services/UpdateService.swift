@@ -39,6 +39,20 @@ class UpdateService {
         })
     }
     
+    func observeTrips(handler: @escaping(_ coordinateDict: Dictionary<String, AnyObject>?) -> Void) {
+        DataService.instance.REF_TRIPS.observe(.value, with: { (snapshot) in
+            if let tripSnapshot = snapshot.children.allObjects as? [DataSnapshot] {
+                for trip in tripSnapshot {
+                    if trip.hasChild("passengerKey") && trip.hasChild("tripIsAccepted") {
+                        if let tripDict = trip.value as? Dictionary<String, AnyObject> {
+                            handler(tripDict)
+                        }
+                    }
+                }
+            }
+        })
+    }
+    
     func updateTripsWithCoordinatesUponRequest() {
         DataService.instance.REF_USERS.observeSingleEvent(of: .value, with: { (snapshot) in
             if let userSnapshot = snapshot.children.allObjects as? [DataSnapshot] {
