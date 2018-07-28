@@ -56,7 +56,19 @@ class HomeVC: UIViewController, Alertable {
         revealingSplashView.startAnimation()
         
         UpdateService.instance.observeTrips { (tripDict) in
-            <#code#>
+            if let tripDict = tripDict {
+                let pickupCoordinate = tripDict["pickupCoordinate"] as! NSArray
+                let tripKey = tripDict["passengerKey"] as! String
+                let acceptanceStatus = tripDict["tripIsAccepted"] as! Bool
+                
+                if acceptanceStatus == false {
+                    DataService.instance.driverIsAvailable(key: (Auth.auth().currentUser?.uid)!, handler: { (available) in
+                        if available {
+                            
+                        }
+                    })
+                }
+            }
         }
     }
     
